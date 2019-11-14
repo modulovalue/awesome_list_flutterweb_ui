@@ -1,16 +1,7 @@
-# awesome_list
+# awesome_list_flutterweb_ui
 
-A new Flutter project.
+[![License](https://img.shields.io/github/license/modulovalue/awesome_list_flutterweb_ui?style=flat-square&logo=github)](https://github.com/modulovalue/awesome_list_flutterweb_ui/blob/master/LICENSE) [![Github Stars](https://img.shields.io/github/stars/modulovalue/awesome_list_flutterweb_ui?style=flat-square&logo=github)](https://github.com/modulovalue/awesome_list_flutterweb_ui) [![Twitter Follow](https://img.shields.io/twitter/follow/modulovalue?style=social&logo=twitter)](https://twitter.com/modulovalue) [![GitHub Follow](https://img.shields.io/github/followers/modulovalue?style=social&logo=github)](https://github.com/modulovalue)
 
-## Getting Started
+[Live demo](http://modulovalue.com/awesome_list_flutterweb_ui)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot 1](assets/screenshot1.png)
