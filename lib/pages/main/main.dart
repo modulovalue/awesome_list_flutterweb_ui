@@ -81,7 +81,7 @@ Widget breadcrumbs(Map<int, String> selectedCategories, int dataCount) {
             curNode = curNode.child[category];
             texts.add(curNode.name);
           });
-          return texts.join(" > ");
-        }() + " > $dataCount");
+          return texts.join(" • ");
+        }() + " • $dataCount");
   };
 }

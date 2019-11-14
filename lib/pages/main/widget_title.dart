@@ -7,8 +7,9 @@ Iterable<Widget> title() =>
     [
       apply
       & center()
-      & textSize(52.0)
+      & textSize(48.0)
       & textWeight700()
+      & textAlignC()
           > const Text("Awesome List"),
 
       apply

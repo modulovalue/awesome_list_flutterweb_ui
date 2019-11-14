@@ -8,7 +8,7 @@ Widget contentTile({
   @required void Function() tap,
 }) =>
     apply
-    & padding(vertical: 3.0)
+    & padding(vertical: 2.0)
     & card(color: Color.lerp(Colors.grey[800], Colors.grey[900], 0.7))
         > ListTile(
       onTap: tap,

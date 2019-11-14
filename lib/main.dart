@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       ).copyWith(
         primaryColor: Colors.blue,
       ),
-      home: textAlignC() > mainWidget(),
+      home: mainWidget(),
     );
   }
 }
