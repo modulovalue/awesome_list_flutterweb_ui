@@ -1,0 +1,23 @@
+name: awesome_list_flutterweb_ui
+description: A new Flutter project.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.6.6-dev.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+  bird_flutter: 0.0.2+1
+  bird: 0.0.2+1
+  graphs: ^0.2.0
+  cassowary: ^0.3.0+3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  extra_pedantic: ^1.1.1+3
+
+flutter:
+  uses-material-design: true
