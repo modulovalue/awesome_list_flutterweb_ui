@@ -1,4 +1,3 @@
-import 'package:bird/bird.dart';
 import 'package:flutter/material.dart';
 
 class TagData {
@@ -22,18 +21,8 @@ class TagData {
   @override
   int get hashCode => id.hashCode;
 
-  List<TagData> getAllChildren() {
-    return child.values.toList();
-  }
-
-  Option<TagData> getChildren(String id) {
-    return optionOf(child[id]);
-  }
-
   @override
-  String toString() {
-    return 'TagData{id: $id, name: $name}';
-  }
+  String toString() => 'TagData{id: $id, name: $name}';
 }
 
 class EntryData {
@@ -43,21 +32,10 @@ class EntryData {
 
   final String link;
 
-//  final Option<String> githubUserRepoForStarsBadge;
-//  final Option<String> githubUserRepoForLicenseBadge;
-  final Option<String> pubdevPackageNameForBadge;
-//  final Option<String> twitterUserForFollowBadge;
-//  final Option<String> githubUserForFollowBadge;
-
   const EntryData({
     @required this.title,
     @required this.description,
     @required this.createdOnMillisecondsSinceEpoch,
     @required this.link,
-//    this.githubUserRepoForStarsBadge = const None(),
-//    this.githubUserRepoForLicenseBadge = const None(),
-    this.pubdevPackageNameForBadge = const None(),
-//    this.twitterUserForFollowBadge = const None(),
-//    this.githubUserForFollowBadge = const None(),
   });
 }

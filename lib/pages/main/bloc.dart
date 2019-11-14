@@ -1,4 +1,4 @@
-import 'package:awesome_list/model/model.dart';
+import 'package:awesome_list_flutterweb_ui/model/model.dart';
 import 'package:bird/bird.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +11,9 @@ class MainBloc extends HookBloc {
   Wave<Map<int, String>> selectedCategories;
   Wave<List<SelectedIDS>> allItems;
 
-  MainBloc(List<String> _initSelectedCats, TagData root) {
+  TagData _root;
+
+  MainBloc(List<String> _initSelectedCats, this._root) {
     _selectedCategories = Signal(_initSelectedCats.asMap());
     disposeLater(_selectedCategories.close);
     selectedCategories = _selectedCategories.wave;
@@ -20,7 +22,7 @@ class MainBloc extends HookBloc {
             () sync* {
           var current = SelectedIDS(
             selectedItem: optionOf(_selectedCats[0]),
-            ids: root.child,
+            ids: _root.child,
           );
           int currentColumn = 0;
           yield current;
@@ -55,6 +57,24 @@ class MainBloc extends HookBloc {
 
       return _new;
     }());
+
+    // find last node
+    TagData currentNode = _selectedCategories.value.entries.fold(
+        _root, (TagData currentNode, entry) {
+      if (currentNode != null) {
+        return currentNode.child[entry.value];
+      } else {
+        return null;
+      }
+    });
+
+    // Set the columns subcategory to the first category recursively
+    if (currentNode != null) {
+      final categories = currentNode.child.entries;
+      if (categories.isNotEmpty) {
+        selectRowAtColumn(categories.first.key, column + 1);
+      }
+    }
   }
 }
 
@@ -93,15 +113,6 @@ extension IterableGetAtOrNone<T> on Iterable<T> {
       return some(this.toList()[i]);
     } else {
       return none();
-    }
-  }
-
-  Option<int> indexOfOrNone(T elmnt) {
-    final index = this.toList().indexOf(elmnt);
-    if (index == -1) {
-      return none();
-    } else {
-      return some(index);
     }
   }
 }

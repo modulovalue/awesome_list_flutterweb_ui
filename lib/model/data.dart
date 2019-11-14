@@ -1,5 +1,4 @@
-import 'package:awesome_list/model/model.dart';
-import 'package:bird/bird.dart';
+import 'package:awesome_list_flutterweb_ui/model/model.dart';
 
 Map<String, List<EntryData>> allData = {
   "drawers": [
@@ -636,17 +635,21 @@ Map<String, List<EntryData>> allData = {
   ],
   "math": [
     const EntryData(
+      title: "stats",
+      description: "Calculate common statistical values for a set of numbers: max, min, mean, median, standard deviation, and standard error.",
+      link: "https://pub.dev/packages/stats",
+      createdOnMillisecondsSinceEpoch: 1573686156552,
+    ),
+    const EntryData(
       title: "trotter",
       description: "Class definitions for pseudo-lists that simplify working with structures commonly encountered in combinatorics such as permutations, combinations and subsets.",
       link: "https://pub.dev/packages/trotter",
-      pubdevPackageNameForBadge: Some("trotter"),
       createdOnMillisecondsSinceEpoch: 1573686156552,
     ),
     const EntryData(
       title: "extended_math",
       description: "Library that adds functionality of all maths sections that don't exist in dart:math.",
       link: "https://pub.dev/packages/extended_math",
-      pubdevPackageNameForBadge: Some("extended_math"),
       createdOnMillisecondsSinceEpoch: 1573686156552,
     ),
   ],
@@ -655,35 +658,30 @@ Map<String, List<EntryData>> allData = {
       title: "provider",
       description: "A mixture between dependency injection and state management, built with widgets for widgets.",
       link: "https://pub.dev/packages/provider",
-      pubdevPackageNameForBadge: Some("provider"),
       createdOnMillisecondsSinceEpoch: 1573686156552,
     ),
     const EntryData(
       title: "bloc",
       description: "A predictable state management library that helps implement the BLoC (Business Logic Component) design pattern.",
       link: "https://pub.dev/packages/flutter_bloc",
-      pubdevPackageNameForBadge: Some("flutter_bloc"),
       createdOnMillisecondsSinceEpoch: 1573686156552,
     ),
     const EntryData(
       title: "flutter_bloc",
       description: "Flutter Widgets that make it easy to implement the BLoC (Business Logic Component) design pattern. Built to be used with the bloc state management package.",
       link: "https://pub.dev/packages/flutter_bloc",
-      pubdevPackageNameForBadge: Some("flutter_bloc"),
       createdOnMillisecondsSinceEpoch: 1573686156552,
     ),
     const EntryData(
       title: "redux",
       description: "Redux for Dart",
       link: "https://pub.dev/packages/redux",
-      pubdevPackageNameForBadge: Some("redux"),
       createdOnMillisecondsSinceEpoch: 1573686156552,
     ),
     const EntryData(
       title: "mobx",
       description: "MobX is a library for reactively managing the state of your applications. Use the power of observables, actions, and reactions to supercharge your Dart and Flutter apps.",
       link: "https://pub.dev/packages/mobx",
-      pubdevPackageNameForBadge: Some("mobx"),
       createdOnMillisecondsSinceEpoch: 1573686156552,
     ),
     const EntryData(
@@ -698,14 +696,12 @@ Map<String, List<EntryData>> allData = {
       title: "dartz",
       description: "Functional Programming in Dart. Purify your Dart code using efficient immutable data structures, monads, lenses and other FP tools.",
       link: "https://pub.dev/packages/dartz",
-      pubdevPackageNameForBadge: Some("dartz"),
       createdOnMillisecondsSinceEpoch: 1573686156552,
     ),
     const EntryData(
       title: "functional_data",
       description: "Annotations and helpers for lenses for code generated with the `function_data_generator` package.",
       link: "https://pub.dev/packages/functional_data",
-      pubdevPackageNameForBadge: Some("functional_data"),
       createdOnMillisecondsSinceEpoch: 1573686156552,
     ),
     const EntryData(
@@ -724,7 +720,6 @@ Map<String, List<EntryData>> allData = {
       title: "abstract_dart",
       description: "A collection of algebraic structures borrowed from abstract algebra. Semigroup, Monoid, Group & Field.",
       link: "https://pub.dev/packages/abstract_dart",
-      pubdevPackageNameForBadge: Some("abstract_dart"),
       createdOnMillisecondsSinceEpoch: 1573686156552,
     ),
   ],
@@ -1112,7 +1107,7 @@ Map<String, List<EntryData>> allData = {
     const EntryData(
       title: "r/dartlang",
       description: "Reddit community about Dart",
-      link: "https://www.reddit.com/search/?q=r%2Fdartlang",
+      link: "https://www.reddit.com/r/dartlang/",
       createdOnMillisecondsSinceEpoch: 1573686156552,
     ),
     const EntryData(

@@ -8,11 +8,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^0.1.2
   bird_flutter: 0.0.2+1
   bird: 0.0.2+1
-  graphs: ^0.2.0
-  cassowary: ^0.3.0+3
+  timeago: ^2.0.22
 
 dev_dependencies:
   flutter_test:
